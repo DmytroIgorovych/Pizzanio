@@ -6,21 +6,26 @@
 
 .container {
   max-width: 1920px;
-  padding: 50px 100px 50px 17%;
+  margin: 0 auto;
+  padding: 50px 0 60px 0;
   background-color: #191526;
   font-family: Antonio;
   font-size: 16px;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .container .promotext {
-  max-width: 600px;
+  max-width: 35vw;
+  margin-left: 12vw;
+  padding-right: 50px;
 }
 .container .promotext h1 {
   font-family: Antonio;
   font-size: 200px;
   color: white;
+  line-height: 200px;
+  padding-top: 20px;
 }
 .container .promotext .span {
   font-family: Charm;
@@ -29,17 +34,19 @@
   display: block;
   width: -moz-max-content;
   width: max-content;
-  margin: -50px 0 0 250px;
+  margin: -30px 0 20px 250px;
 }
 .container .promotext h4 {
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .container .promotext p {
   font-size: 15px;
   color: rgba(220, 218, 218, 0.662);
-  line-height: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
 }
 .container .promotext ul li {
   list-style-type: circle;
@@ -60,24 +67,24 @@
   background-color: rgba(195, 39, 4, 0.15);
   color: rgba(220, 218, 218, 0.662);
   border: 2.5px solid rgb(195, 39, 4);
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .container .pizza-image {
-  width: -moz-max-content;
-  width: max-content;
+  width: 45vw;
+  max-width: 660px;
+  height: 100%;
   position: relative;
-  margin: 15px 20px 0 100px;
   z-index: 1;
 }
 .container .pizza-image .imgContainer {
   border-radius: 50%;
   background-color: #191526;
-  margin: 25px 25px 45px 25px;
+  margin: 15px 25px 45px 15px;
 }
 .container .pizza-image .imgContainer img {
-  width: 525px;
-  height: 525px;
-  padding: 25px;
+  width: 105%;
+  padding: 35px;
   border: 2px solid rgb(195, 39, 4);
   border-radius: 50%;
   background-color: rgba(195, 39, 4, 0.2);
@@ -88,8 +95,8 @@
   font-family: Charm;
   color: rgb(177, 56, 28);
   font-size: 40px;
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border: 2px solid rgb(195, 39, 4);
   border-radius: 50%;
   display: flex;
@@ -118,45 +125,50 @@
 
 @media (max-width: 1440px) {
   .container {
-    padding: 50px 30px 50px 15%;
+    font-size: 14px;
   }
   .container .promotext {
-    max-width: 550px;
+    max-width: 37vw;
+    padding-right: 40px;
+    margin-left: vw;
   }
   .container .promotext h1 {
-    font-size: 180px;
+    font-size: 150px;
+    line-height: 170px;
   }
   .container .promotext .span {
-    font-size: 70px;
-    margin: -50px 0 0 220px;
+    font-size: 60px;
+    margin: -30px 0 0 190px;
   }
   .container .promotext h4 {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .container .promotext p {
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .container .promotext ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
   }
   .container .promotext ul li span {
-    font-size: 14px;
+    font-size: 13px;
   }
   .container .promotext button {
-    font-size: 15px;
+    font-size: 14px;
     padding: 12px 24px;
   }
   .container .pizza-image {
-    margin: 15px 20px 0 30px;
+    width: 40vw;
   }
   .container .pizza-image .imgContainer {
-    margin: 15px 25px 30px 15px;
-  }
-  .container .pizza-image .imgContainer img {
-    width: 500px;
-    height: 500px;
+    margin: 15px 25px 25px 15px;
   }
   .container .pizza-image .saleCircle {
     font-size: 35px;
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
   .container .pizza-image .buttons button {
     padding: 15px 29px;
@@ -164,149 +176,134 @@
 }
 @media (max-width: 1280px) {
   .container {
-    padding: 40px 30px 40px 14%;
-    justify-content: space-between;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .container .promotext {
+    margin-left: 6vw;
+    padding-right: 0;
   }
   .container .promotext h1 {
-    font-size: 160px;
+    font-size: 140px;
+    line-height: 140px;
   }
   .container .promotext .span {
     font-size: 60px;
-    margin: -45px 0 0 200px;
+    margin: -20px 0 -10px 200px;
   }
   .container .promotext h4 {
     font-size: 14px;
+    margin-bottom: 8px;
   }
   .container .promotext p {
-    font-size: 12px;
+    font-size: 11.5px;
+    margin-bottom: 0;
+  }
+  .container .promotext ul li {
+    margin-bottom: 5px;
   }
   .container .promotext ul li span {
-    font-size: 12px;
+    font-size: 11.5px;
   }
   .container .promotext button {
+    margin-top: 10px;
     font-size: 12px;
   }
   .container .pizza-image {
-    margin: 15px 20px 0 30px;
+    width: 38vw;
   }
   .container .pizza-image .imgContainer {
-    margin: 15px 25px 30px 15px;
+    margin: 20px 20px 20px 20px;
   }
   .container .pizza-image .imgContainer img {
-    width: 450px;
-    height: 450px;
+    width: 105%;
+    padding: 25px;
   }
   .container .pizza-image .saleCircle {
-    font-size: 35px;
+    font-size: 30px;
     width: 120px;
     height: 120px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1152px) {
   .container {
-    padding: 40px 30px 40px 10%;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .container .promotext {
+    max-width: 38vw;
+    margin-left: 5vw;
   }
   .container .promotext h1 {
-    font-size: 130px;
+    font-size: 135px;
+    line-height: 135px;
   }
   .container .promotext .span {
-    font-size: 50px;
-    margin: -35px 0 0 180px;
-  }
-  .container .promotext h4 {
-    font-size: 14px;
+    font-size: 55px;
+    margin: -20px 0 -10px 200px;
   }
   .container .promotext p {
-    font-size: 12px;
-  }
-  .container .promotext ul li {
-    font-size: 16px;
-    margin: 0;
-    margin-left: 20px;
+    font-size: 11px;
   }
   .container .promotext ul li span {
-    font-size: 12px;
-  }
-  .container .promotext button {
-    font-size: 12px;
-    padding: 10px 20px;
-    margin: 0;
+    font-size: 11px;
   }
   .container .pizza-image {
-    margin: 15px 0 0 30px;
-  }
-  .container .pizza-image .imgContainer {
-    align-content: flex-end;
-    margin: 15px 10px 30px 15px;
-  }
-  .container .pizza-image .imgContainer img {
-    width: 400px;
-    height: 400px;
-  }
-  .container .pizza-image .saleCircle {
-    font-size: 30px;
-    width: 100px;
-    height: 100px;
-  }
-  .container .pizza-image .buttons {
-    margin-bottom: 30px;
-  }
-  .container .pizza-image .buttons button {
-    padding: 13px 25px;
-  }
-  .container .pizza-image .buttons button:first-child {
-    margin-right: 10px;
+    width: 42vw;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container {
-    padding: 40px 30px 40px 8%;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 30px 0 40px 0;
+  }
+  .container .promotext {
+    margin-left: 11vw;
+    padding-right: 0;
   }
   .container .promotext h1 {
     font-size: 100px;
+    line-height: 100px;
   }
   .container .promotext .span {
-    font-size: 30px;
-    margin: -25px 0 0 140px;
+    font-size: 45px;
+    margin: -15px 0 -10px 135px;
   }
   .container .promotext h4 {
-    font-size: 11px;
+    font-size: 11.5px;
+    margin-bottom: 0;
   }
   .container .promotext p {
-    font-size: 9px;
+    font-size: 10px;
+    margin-bottom: 0;
+    line-height: 14px;
   }
   .container .promotext ul li {
-    font-size: 14px;
-    margin: 0;
-    margin-left: 20px;
+    margin-bottom: 0;
   }
   .container .promotext ul li span {
-    font-size: 9px;
+    font-size: 10px;
   }
   .container .promotext button {
-    font-size: 9px;
-    padding: 8px 16px;
-    margin: 0;
+    margin-top: 7px;
+    font-size: 10px;
+    padding: 10px 20px;
   }
   .container .pizza-image {
-    margin: 15px 0 0 10px;
+    width: 38vw;
   }
   .container .pizza-image .imgContainer {
-    align-content: flex-end;
-    margin: 10px 10px 30px 10px;
+    margin: 20px 20px 20px 20px;
   }
   .container .pizza-image .imgContainer img {
-    padding: 15px;
-    width: 300px;
-    height: 300px;
+    width: 105%;
+    padding: 25px;
   }
   .container .pizza-image .saleCircle {
-    font-size: 20px;
-    width: 70px;
-    height: 70px;
-  }
-  .container .pizza-image .buttons {
-    margin-bottom: 20px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
   }
   .container .pizza-image .buttons button {
     padding: 10px 20px;

@@ -7,42 +7,47 @@
 .header {
   background-color: rgb(224, 73, 39);
   max-width: 1920px;
+  margin: 0 auto;
 }
 .header .container {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   justify-content: center;
   align-items: center;
   padding: 10px 0;
 }
 .header .container nav {
   display: flex;
-  justify-content: center;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 110px;
-  margin-right: 60px;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  letter-spacing: 1px;
 }
 .header .container nav a {
   text-decoration: none;
   color: white;
   font-size: 16px;
   padding: 8px;
-  margin-right: 80px;
 }
 .header .container nav a:hover {
   background-color: rgb(177, 56, 28);
 }
 .header .container nav a:last-child {
-  margin-right: 40px;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 0;
 }
 .header .container .logo {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  padding: 10px 20px 10px 17.5%;
+  width: 101%;
+  padding: 13px 20px;
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: visible;
   background-color: rgb(177, 56, 28);
 }
 .header .container .logo a {
@@ -61,9 +66,9 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   background-color: rgb(177, 56, 28);
-  padding: 10px;
+  padding: 15px;
   padding-left: 25px;
-  flex-grow: 1;
+  width: 101%;
 }
 .header .container .header_right .icons {
   display: flex;
@@ -79,23 +84,22 @@
 
 footer {
   max-width: 1920px;
+  margin: 0 auto;
 }
 footer .container {
-  max-width: 1920px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: rgb(177, 56, 28);
-  padding: 50px 17%;
+  padding: 50px 0;
 }
 footer .container nav {
   display: flex;
   flex-direction: column;
   max-width: -moz-max-content;
   max-width: max-content;
-  flex-grow: 3;
   align-items: last baseline;
   justify-content: center;
-  margin-right: 150px;
+  margin-right: 190px;
 }
 footer .container nav a {
   text-decoration: none;
@@ -109,8 +113,7 @@ footer .container nav a:hover {
 footer .container .logo {
   max-width: -moz-max-content;
   max-width: max-content;
-  flex-grow: 1;
-  margin-right: 420px;
+  margin-right: 425px;
 }
 footer .container .logo a {
   font-family: Antonio;
@@ -127,9 +130,9 @@ footer .container .logo a img {
 footer .container .contacts {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   max-width: -moz-max-content;
   max-width: max-content;
+  margin-right: 60px;
 }
 footer .container .contacts a {
   text-decoration: none;
@@ -139,16 +142,21 @@ footer .container .contacts a {
 }
 
 @media (max-width: 1440px) {
+  .header .container {
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+    padding: 7px 0;
+  }
   .header .container nav {
-    margin-left: 80px;
-    margin-right: 50px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
   }
   .header .container nav a {
-    margin-right: 70px;
     font-size: 14px;
   }
   .header .container .logo {
-    padding: 10px 20px 10px 15%;
+    padding: 10px;
+    padding-right: 18px;
   }
   .header .container .logo a {
     font-size: 20px;
@@ -157,173 +165,152 @@ footer .container .contacts a {
     width: 35px;
     height: 35px;
   }
+  .header .container .header_right {
+    padding: 12px;
+    padding-left: 20px;
+  }
   .header .container .header_right .icons a img {
     width: 30px;
     height: 30px;
   }
   footer .container {
-    padding: 30px 15%;
+    padding: 25px 0;
+  }
+  footer .container nav {
+    margin-right: 160px;
   }
   footer .container nav a {
     font-size: 14px;
-    padding: 9px;
+    padding: 7px;
+  }
+  footer .container .logo {
+    margin-right: 380px;
   }
   footer .container .logo a {
     font-size: 20px;
   }
+  footer .container .contacts {
+    margin-right: 40px;
+  }
   footer .container .contacts a {
     font-size: 14px;
-    padding: 9px;
+    padding: 7px;
   }
 }
 @media (max-width: 1280px) {
+  .header .container {
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+    padding: 7px 0;
+  }
   .header .container nav {
-    margin-left: 60px;
-    margin-right: 50px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
   .header .container nav a {
-    margin-right: 60px;
     font-size: 12px;
   }
   .header .container .logo {
-    padding: 7px 20px 7px 14%;
+    padding: 8px;
+    padding-right: 18px;
   }
   .header .container .logo a {
-    font-size: 18px;
+    font-size: 20px;
   }
   .header .container .logo a img {
-    width: 33px;
-    height: 33px;
+    width: 35px;
+    height: 35px;
   }
   .header .container .header_right {
-    padding: 7px 7px 7px 20px;
-  }
-  .header .container .header_right .icons a:first-child {
-    margin-right: 35px;
+    padding: 10px;
+    padding-left: 20px;
   }
   .header .container .header_right .icons a img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
   footer .container {
-    padding: 30px 14%;
+    padding: 25px 0;
+  }
+  footer .container nav {
+    margin-right: 160px;
   }
   footer .container nav a {
     font-size: 12px;
-    padding: 9px;
+    padding: 7px;
+  }
+  footer .container .logo {
+    margin-right: 310px;
   }
   footer .container .logo a {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  footer .container .contacts {
+    margin-right: 40px;
   }
   footer .container .contacts a {
     font-size: 12px;
-    padding: 9px;
+    padding: 7px;
   }
 }
 @media (max-width: 1024px) {
   .header .container {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
     padding: 7px 0;
   }
   .header .container nav {
-    margin-left: 60px;
-    margin-right: 40px;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
   }
   .header .container nav a {
-    margin-right: 40px;
-    font-size: 12px;
-  }
-  .header .container .logo {
-    padding: 7px 20px 7px 10%;
-  }
-  .header .container .logo a {
-    font-size: 16px;
-  }
-  .header .container .logo a img {
-    width: 28px;
-    height: 28px;
-  }
-  .header .container .header_right {
-    padding: 8px 7px 8px 20px;
-  }
-  .header .container .header_right .icons a img {
-    width: 25px;
-    height: 25px;
-  }
-  footer .container {
-    justify-content: space-between;
-    padding: 25px 10%;
-  }
-  footer .container nav a {
-    font-size: 12px;
-    padding: 9px;
-  }
-  footer .container .logo {
-    margin-right: 220px;
-  }
-  footer .container .logo a {
-    font-size: 16px;
-  }
-  footer .container .logo a img {
-    width: 30px;
-    height: 30px;
-  }
-  footer .container .contacts a {
-    font-size: 12px;
-    padding: 9px;
-  }
-}
-@media (max-width: 768px) {
-  .header .container {
-    padding: 5px 0;
-  }
-  .header .container nav {
-    margin-left: 50px;
-    margin-right: 30px;
-  }
-  .header .container nav a {
-    margin-right: 30px;
     font-size: 10px;
   }
   .header .container .logo {
-    padding: 5px 15px 5px 8%;
+    padding: 8px;
+    padding-right: 18px;
+    padding-left: 0;
   }
   .header .container .logo a {
-    font-size: 14px;
+    font-size: 15px;
   }
   .header .container .logo a img {
     width: 25px;
     height: 25px;
   }
   .header .container .header_right {
-    padding: 7px 6px 7px 18px;
+    padding: 10px;
+    padding-left: 15px;
   }
   .header .container .header_right .icons a img {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
+  }
+  .header .container .header_right .icons a:first-child {
+    margin-right: 30px;
   }
   footer .container {
-    justify-content: space-between;
-    padding: 10px 8%;
+    padding: 20px 0;
   }
   footer .container nav {
-    margin: 0;
+    margin-right: 100px;
   }
   footer .container nav a {
     font-size: 10px;
     padding: 5px;
   }
   footer .container .logo {
-    margin-right: 100px;
+    margin-right: 250px;
   }
   footer .container .logo a {
-    font-size: 14px;
+    font-size: 15px;
   }
   footer .container .logo a img {
     width: 25px;
     height: 25px;
   }
   footer .container .contacts {
-    margin-right: 100px;
+    margin-right: 80px;
   }
   footer .container .contacts a {
     font-size: 10px;
