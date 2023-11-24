@@ -4,16 +4,38 @@
       <div class="logo">
         <a routerLink="/"><img width="40" height="40" src="./assets/images/logo.png" alt="logo"/>Pizzanio</a>
       </div>
-      <nav>
+      <nav class="head-nav">
         <a routerLink="/" routerLinkActive="active one" [routerLinkActiveOptions]="{exact: true}">Головна</a>
         <a routerLink="/menu" routerLinkActive="active two">Меню</a>
         <a routerLink="/orders" routerLinkActive="active three">Замовлення</a>
         <a routerLink="/about-us" routerLinkActive="active four">Про нас</a>
       </nav>
+
       <div class="header_right">
         <div class="icons">
-          <a href="#"><img width="35" height="35" src="./assets/images/icons/earth.png" alt="language"></a>
-          <a href="#"><img width="35" height="35" src="./assets/images/icons/logIn.png" alt="logIn"></a>
+          <button class="language"></button>
+          <button class="logIn"></button>
+       </div> 
+      </div>
+
+      <div class="mobile-header">
+        <div class="mobile-logo">
+          <a routerLink="/"><img width="30" height="30" src="./assets/images/logo.png" alt="logo"/></a>
+        </div>
+        <div class="brand">Pizzanio</div>
+        <div class="burger_btns">
+          <button (click)="toggle=!toggle" class="open-menu" *ngIf="!toggle"></button>
+          <button (click)="toggle=!toggle" class="close-menu" *ngIf="toggle"></button>
+          <nav class="mobile-nav" *ngIf="toggle">
+            <a routerLink="/" routerLinkActive="active one" [routerLinkActiveOptions]="{exact: true}">Головна</a>
+            <a routerLink="/menu" routerLinkActive="active two">Меню</a>
+            <a routerLink="/orders" routerLinkActive="active three">Замовлення</a>
+            <a routerLink="/about-us" routerLinkActive="active four">Про нас</a>
+            <div class="icons">
+              <button class="language"></button>
+              <button class="logIn"></button>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
@@ -23,7 +45,7 @@
 
   <footer>
     <div class="container">
-      <div class="logo">
+      <div class="logo">  
         <a routerLink="/"><img width="40" height="40" src="./assets/images/logo.png" alt="logo"/>Pizzanio</a>
       </div>
       <nav>

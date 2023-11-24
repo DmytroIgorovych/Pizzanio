@@ -323,4 +323,73 @@ html {
   .container .pizza-image .buttons button:nth-child(2) {
     background-size: 10px 10px;
   }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .container .promotext {
+    width: 40vw;
+  }
+  .container .promotext h1 {
+    font-size: 7em;
+    line-height: 100px;
+  }
+  .container .promotext .span {
+    font-size: 3em;
+    margin: -15px 0 -10px 120px;
+  }
+  .container .promotext h4 {
+    font-size: 0.67em;
+    margin-bottom: 0;
+  }
+  .container .promotext p {
+    font-size: 0.6em;
+    margin-bottom: 0;
+    line-height: 14px;
+  }
+  .container .promotext ul li {
+    font-size: 0.8em;
+    margin: 0;
+    margin-left: 15px;
+  }
+  .container .promotext ul li span {
+    font-size: 0.7em;
+  }
+  .container .promotext button {
+    font-size: 9px;
+    padding: 8px 16px;
+    margin: 0;
+  }
+  .container .pizza-image {
+    width: 35vw;
+    margin: 15px 0 0 10px;
+  }
+  .container .pizza-image .imgContainer {
+    align-content: flex-end;
+    margin: 10px 10px 10px 10px;
+  }
+  .container .pizza-image .imgContainer img {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .container .pizza-image .saleCircle {
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+  }
+  .container .pizza-image .buttons {
+    margin-bottom: 20px;
+  }
+  .container .pizza-image .buttons button {
+    padding: 10px 20px;
+  }
+  .container .pizza-image .buttons button:first-child {
+    background-size: 10px 10px;
+    margin-right: 10px;
+  }
+  .container .pizza-image .buttons button:nth-child(2) {
+    background-size: 10px 10px;
+  }
 }/*# sourceMappingURL=head-page.component.css.map */

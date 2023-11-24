@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Pizzanio';
+
+  toggle=false;
+
+  openMenu(openBtn:HTMLButtonElement){
+    console.dir(openBtn);
+    // openBtn.style.display='none'
+    // openBtn.classList.add('active')
+  }
+
+  closeMenu(openBtn:HTMLButtonElement){
+    openBtn.classList.remove('active');
+  }
 }

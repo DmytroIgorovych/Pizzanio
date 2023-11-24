@@ -352,70 +352,77 @@ html {
     }
 }
 
-// @media (max-width: 768px) {
-//     .container{
-//         padding: 40px 30px 40px 8%;
-//         .promotext{
-//             h1{ 
-//                 font-size: 100px;
-//             }
-//             .span{
-//                 font-size: 30px;
-//                 margin: -25px 0 0 140px;
-//             }
-//             h4{
-//                 font-size: 11px;
-//             }
-//             p{
-//                 font-size: 9px;
-//             }
-//             ul{
-//                 li{
-//                     font-size: 14px;
-//                     margin: 0;
-//                     margin-left: 20px;
-//                     span{
-//                         font-size: 9px;
-//                     }
-//                 }
-//             }
-//             button{
-//                 font-size: 9px;
-//                 padding: 8px 16px;
-//                 margin: 0;
-//             }
-//         }
+@media (max-width: 768px) {
+    .container{
+        // justify-content: space-between;
+        padding: 20px;
+        .promotext{
+            width: 40vw;
+            h1{ 
+                font-size: 7em;
+                line-height: 100px;
+            }
+            .span{
+                font-size: 3em;
+                margin: -15px 0 -10px 120px
+            }
+            h4{
+                font-size: 0.67em;
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 0.6em;
+                margin-bottom: 0;
+                line-height: 14px
+            }
+            ul{
+                li{
+                    font-size: 0.8em;
+                    margin: 0;
+                    margin-left: 15px;
+                    span{
+                        font-size: 0.7em;
+                    }
+                }
+            }
+            button{
+                font-size: 9px;
+                padding: 8px 16px;
+                margin: 0;
+            }
+        }
     
-//         .pizza-image{
-//             margin: 15px 0 0 10px;
-//             .imgContainer{
-//                 align-content: flex-end;
-//                 margin: 10px 10px 30px 10px;
-//                 img{
-//                     padding: 15px;
-//                     width: 100%;
-//                     height: 100%;
-//                }
-//             }
+        .pizza-image{
+            width: 35vw;
+            margin: 15px 0 0 10px;
+            .imgContainer{
+                align-content: flex-end;
+                margin: 10px 10px 10px 10px;
+                img{
+                    padding: 15px;
+                    width: 100%;
+                    height: 100%;
+               }
+            }
             
-//            .saleCircle{
-//             font-size: 20px;
-//             width: 70px;
-//             height: 70px;
-//            }
-//            .buttons{
-//             margin-bottom: 20px;
-//                 button{
-//                     padding: 10px 20px;
-//                     &:first-child{
-//                         background-size: 10px 10px;
-//                         margin-right: 10px;
-//                     }
-//                     &:nth-child(2){
-//                         background-size: 10px 10px;
-//                     }
-//                 }
-//            }
-//         }
-//     }
-// }
+           .saleCircle{
+            font-size: 20px;
+            width: 80px;
+            height: 80px;
+           }
+           .buttons{
+            margin-bottom: 20px;
+                button{
+                    padding: 10px 20px;
+                    &:first-child{
+                        background-size: 10px 10px;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2){
+                        background-size: 10px 10px;
+                    }
+                }
+           }
+        }
+    }
+}
