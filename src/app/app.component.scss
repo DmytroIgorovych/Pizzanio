@@ -850,6 +850,8 @@ footer{
             nav{
                 margin: 20px 0;
                 justify-content: flex-start;
+                align-items: flex-start;
+                -webkit-align-items: flex-start;
                 a{
                     font-size: 12px;
                     padding: 4px;

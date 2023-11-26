@@ -791,6 +791,8 @@ footer .container .contacts a {
   footer .container nav {
     margin: 20px 0;
     justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
   }
   footer .container nav a {
     font-size: 12px;
