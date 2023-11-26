@@ -136,7 +136,6 @@ html {
   .container .promotext {
     max-width: 37vw;
     padding-right: 40px;
-    margin-left: vw;
   }
   .container .promotext h1 {
     font-size: 150px;
@@ -298,7 +297,73 @@ html {
     padding: 10px 20px;
   }
   .container .pizza-image {
-    width: 38vw;
+    width: 45vw;
+    flex-grow: 0.3;
+  }
+  .container .pizza-image .imgContainer {
+    margin: 20px 20px 20px 20px;
+  }
+  .container .pizza-image .imgContainer img {
+    width: 105%;
+    padding: 25px;
+  }
+  .container .pizza-image .saleCircle {
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+  }
+  .container .pizza-image .buttons button {
+    padding: 10px 20px;
+  }
+  .container .pizza-image .buttons button:first-child {
+    background-size: 10px 10px;
+    margin-right: 10px;
+  }
+  .container .pizza-image .buttons button:nth-child(2) {
+    background-size: 10px 10px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    padding: 25px 0 20px 0;
+  }
+  .container .promotext {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .container .promotext h1 {
+    font-size: 7.5em;
+    line-height: 100px;
+  }
+  .container .promotext .span {
+    font-size: 3.5em;
+    margin: -15px 0 -10px 135px;
+  }
+  .container .promotext h4 {
+    font-size: 0.7em;
+    margin-bottom: 0;
+  }
+  .container .promotext p {
+    font-size: 0.55em;
+    margin-bottom: 0;
+    line-height: 14px;
+  }
+  .container .promotext ul li {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  .container .promotext ul li span {
+    font-size: 0.55em;
+  }
+  .container .promotext button {
+    margin-top: 7px;
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  .container .pizza-image {
+    width: 42vw;
     flex-grow: 0.3;
   }
   .container .pizza-image .imgContainer {
@@ -326,27 +391,103 @@ html {
 }
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100vw;
   }
   .container .promotext {
-    width: 40vw;
+    max-width: 45vw;
   }
   .container .promotext h1 {
-    font-size: 7em;
-    line-height: 100px;
+    font-size: 7.2em;
+    line-height: 70px;
+    padding-top: 10px;
   }
   .container .promotext .span {
-    font-size: 3em;
-    margin: -15px 0 -10px 120px;
+    font-size: 2.5em;
+    margin: 0 0 -10px 140px;
   }
   .container .promotext h4 {
-    font-size: 0.67em;
+    font-size: 0.8em;
     margin-bottom: 0;
+  }
+  .container .promotext p {
+    font-size: 0.75em;
+    margin-bottom: 0;
+    line-height: 15px;
+  }
+  .container .promotext ul li {
+    font-size: 1em;
+    margin: 0;
+    margin-left: 15px;
+  }
+  .container .promotext ul li span {
+    font-size: 0.65em;
+  }
+  .container .promotext button {
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    padding: 8px 16px;
+    margin: 0;
+  }
+  .container .pizza-image {
+    width: 50vw;
+    margin: 10px 0 0 10px;
+  }
+  .container .pizza-image .imgContainer {
+    align-content: flex-end;
+    margin: 5px 10px 10px 5px;
+  }
+  .container .pizza-image .imgContainer img {
+    padding: 15px;
+    width: 90%;
+  }
+  .container .pizza-image .saleCircle {
+    font-size: 20px;
+    width: 75px;
+    height: 75px;
+  }
+  .container .pizza-image .buttons {
+    margin-bottom: 20px;
+  }
+  .container .pizza-image .buttons button {
+    padding: 10px 20px;
+  }
+  .container .pizza-image .buttons button:first-child {
+    background-size: 10px 10px;
+    margin-right: 10px;
+  }
+  .container .pizza-image .buttons button:nth-child(2) {
+    background-size: 10px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    align-items: center;
+    padding: 10px 20px;
+    width: 100vw;
+  }
+  .container .promotext {
+    max-width: 45vw;
+  }
+  .container .promotext h1 {
+    font-size: 5.5em;
+    line-height: 60px;
+    padding-top: 10px;
+  }
+  .container .promotext .span {
+    font-size: 2.2em;
+    margin: 0 0 0px 100px;
+  }
+  .container .promotext h4 {
+    font-size: 0.6em;
+    margin-top: -10px;
   }
   .container .promotext p {
     font-size: 0.6em;
     margin-bottom: 0;
-    line-height: 14px;
+    line-height: 10px;
   }
   .container .promotext ul li {
     font-size: 0.8em;
@@ -354,33 +495,108 @@ html {
     margin-left: 15px;
   }
   .container .promotext ul li span {
-    font-size: 0.7em;
+    font-size: 0.72em;
   }
   .container .promotext button {
-    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
     padding: 8px 16px;
     margin: 0;
   }
   .container .pizza-image {
-    width: 35vw;
-    margin: 15px 0 0 10px;
+    width: 50vw;
+    margin: 10px 0 0 10px;
   }
   .container .pizza-image .imgContainer {
     align-content: flex-end;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 5px 10px 10px;
   }
   .container .pizza-image .imgContainer img {
     padding: 15px;
-    width: 100%;
-    height: 100%;
+    width: 95%;
   }
   .container .pizza-image .saleCircle {
     font-size: 20px;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
   }
   .container .pizza-image .buttons {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .container .pizza-image .buttons button {
+    padding: 10px 20px;
+  }
+  .container .pizza-image .buttons button:first-child {
+    background-size: 10px 10px;
+    margin-right: 10px;
+  }
+  .container .pizza-image .buttons button:nth-child(2) {
+    background-size: 10px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100vw;
+  }
+  .container .promotext {
+    max-width: 90vw;
+  }
+  .container .promotext h1 {
+    font-size: 5.5em;
+    line-height: 60px;
+    padding-top: 10px;
+  }
+  .container .promotext .span {
+    font-size: 2.2em;
+    margin: 0 0 0px 100px;
+  }
+  .container .promotext h4 {
+    font-size: 0.6em;
+    margin-top: -10px;
+  }
+  .container .promotext p {
+    font-size: 0.6em;
+    margin-bottom: 0;
+    line-height: 10px;
+  }
+  .container .promotext ul li {
+    font-size: 0.8em;
+    margin: 0;
+    margin-left: 15px;
+  }
+  .container .promotext ul li span {
+    font-size: 0.72em;
+  }
+  .container .promotext button {
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    padding: 8px 16px;
+    margin: 0;
+  }
+  .container .pizza-image {
+    width: 50vw;
+    margin: 10px 0 0 10px;
+  }
+  .container .pizza-image .imgContainer {
+    align-content: flex-end;
+    margin: 10px 5px 10px 10px;
+  }
+  .container .pizza-image .imgContainer img {
+    padding: 15px;
+    width: 95%;
+  }
+  .container .pizza-image .saleCircle {
+    font-size: 20px;
+    width: 75px;
+    height: 75px;
+  }
+  .container .pizza-image .buttons {
+    margin-bottom: 10px;
   }
   .container .pizza-image .buttons button {
     padding: 10px 20px;
