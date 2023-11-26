@@ -736,7 +736,7 @@ footer{
         .container{
             display:block;
             margin: 0 auto;
-            padding: 5px 0;
+            padding: 7px 0;
             column-gap: 0;
             .head-nav{
                 display: none;
@@ -762,15 +762,15 @@ footer{
                     a{
                         img{
                             vertical-align: middle;
-                            width: 20px;
-                            height: 20px;
+                            width: 25px;
+                            height: 25px;
                         }
                     }
                 }
                 .brand{
                     font-family: Antonio;
                     color: white;
-                    font-size: 15px;
+                    font-size: 20px;
                 }
                 .burger_btns{
                     border-top-left-radius: 50px;
@@ -821,16 +821,16 @@ footer{
                     .open-menu{
                         vertical-align: middle;
                         border: none;
-                        width: 18px;
-                        height: 18px;
+                        width: 22px;
+                        height: 22px;
                         background: url("../assets/images/icons/burger.png") center center no-repeat;
                         background-size: 20px;
                     }
                     .close-menu{
                         vertical-align: middle;
                         border: none;
-                        width: 18px;
-                        height: 18px;
+                        width: 22px;
+                        height: 22px;
                         background: url("../assets/images/icons/close_btn.png") center center no-repeat;
                         background-size: 20px;
                         position:relative ;
@@ -844,30 +844,30 @@ footer{
     
     footer{
         .container{
+            flex-direction: column;
             justify-content: space-between;
             padding: 18px;
             nav{
-                margin: 0;
-
+                margin: 20px 0;
                 a{
-                    font-size: 8px;
+                    font-size: 12px;
                     padding: 4px;
                 }
             }
             .logo{
                 margin-right: 0;
                 a{
-                    font-size: 12px;
+                    font-size: 16px;
                     img{
-                        width: 25px;
-                        height: 25px;
+                        width: 35px;
+                        height: 35px;
                     }
                 }
             }
             .contacts{
                 margin-right: 0;
                 a{
-                    font-size: 8px;
+                    font-size: 12px;
                     padding: 4px;
                 }
             }
