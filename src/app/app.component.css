@@ -688,7 +688,7 @@ footer .container .contacts a {
   .header .container {
     display: block;
     margin: 0 auto;
-    padding: 7px 0;
+    padding: 10px 0;
     -moz-column-gap: 0;
          column-gap: 0;
   }
@@ -710,7 +710,7 @@ footer .container .contacts a {
   .header .container .mobile-header .mobile-logo {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    padding: 5px 15px;
+    padding: 10px 20px;
     background-color: rgb(177, 56, 28);
   }
   .header .container .mobile-header .mobile-logo a img {
@@ -727,7 +727,7 @@ footer .container .contacts a {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     background-color: rgb(177, 56, 28);
-    padding: 6px 15px;
+    padding: 10px 20px;
     position: relative;
   }
   .header .container .mobile-header .burger_btns .mobile-nav {

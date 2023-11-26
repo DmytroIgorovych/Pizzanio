@@ -539,7 +539,7 @@ html {
   .container {
     flex-direction: column;
     align-items: center;
-    padding: 25px 20px;
+    padding: 50px 20px;
     width: 100vw;
   }
   .container .promotext {
@@ -584,8 +584,8 @@ html {
     align-items: center;
   }
   .container .pizza-image .imgContainer {
-    align-content: flex-end;
-    margin: 20px 0px 20px 20px;
+    -webkit-box-align: start;
+    margin: 23px 0px 20px 23px;
   }
   .container .pizza-image .imgContainer img {
     padding: 12px;
