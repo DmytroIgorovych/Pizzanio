@@ -762,15 +762,15 @@ footer{
                     a{
                         img{
                             vertical-align: middle;
-                            width: 25px;
-                            height: 25px;
+                            width: 30px;
+                            height: 30px;
                         }
                     }
                 }
                 .brand{
                     font-family: Antonio;
                     color: white;
-                    font-size: 20px;
+                    font-size: 24px;
                 }
                 .burger_btns{
                     border-top-left-radius: 50px;
@@ -796,10 +796,10 @@ footer{
                             font-size: 15px;
                         }
                         .icons{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            margin: 0px auto ;
+                            // display: flex;
+                            // justify-content: flex-start;
+                            // align-items: flex-start;
+                            // margin: 0px auto ;
                             margin-top: 30px;
                             .language {
                                 width: 25px;
@@ -821,18 +821,18 @@ footer{
                     .open-menu{
                         vertical-align: middle;
                         border: none;
-                        width: 22px;
-                        height: 22px;
+                        width: 30px;
+                        height: 30px;
                         background: url("../assets/images/icons/burger.png") center center no-repeat;
-                        background-size: 20px;
+                        background-size: 28px;
                     }
-                    .close-menu{
+                    .close-menu{    
                         vertical-align: middle;
                         border: none;
-                        width: 22px;
-                        height: 22px;
+                        width: 30px;
+                        height: 30px;
                         background: url("../assets/images/icons/close_btn.png") center center no-repeat;
-                        background-size: 20px;
+                        background-size: 28px;
                         position:relative ;
                         z-index: 10;
                     }
@@ -849,6 +849,7 @@ footer{
             padding: 18px;
             nav{
                 margin: 20px 0;
+                justify-content: flex-start;
                 a{
                     font-size: 12px;
                     padding: 4px;
