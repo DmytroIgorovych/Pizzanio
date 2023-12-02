@@ -26,7 +26,7 @@
         <div class="burger_btns">
           <button (click)="toggle=!toggle" class="open-menu" *ngIf="!toggle"></button>
           <button (click)="toggle=!toggle" class="close-menu" *ngIf="toggle"></button>
-          <nav class="mobile-nav" *ngIf="toggle">
+          <nav class="mobile-nav" [@openClose]="toggle ? 'open' : 'closed'">
             <a routerLink="/" routerLinkActive="active one" [routerLinkActiveOptions]="{exact: true}">Головна</a>
             <a routerLink="/menu" routerLinkActive="active two">Меню</a>
             <a routerLink="/orders" routerLinkActive="active three">Замовлення</a>

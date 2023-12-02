@@ -6,13 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./head-page.component.scss']
 })
 export class HeadPageComponent {
-
+  i:number=1
 
   prew(){
-    console.log('prew');
+    this.i--
+    if (this.i===0){
+      this.i=5
+    }
   }
 
   next(){
-    console.log('next');
+    this.i++
+    if (this.i===6){
+      this.i=1
+    }
   }
 }

@@ -583,8 +583,6 @@ footer .container .contacts a {
     font-family: Antonio;
     flex-direction: column;
     position: absolute;
-    right: 0;
-    top: 0;
     z-index: 5;
     background-color: rgb(177, 56, 28);
     align-items: flex-start;
