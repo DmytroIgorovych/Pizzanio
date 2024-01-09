@@ -11,13 +11,13 @@ export class HeadPageComponent {
   prew(){
     this.i--
     if (this.i===0){
-      this.i=5
+      this.i=6
     }
   }
 
   next(){
     this.i++
-    if (this.i===6){
+    if (this.i===7){
       this.i=1
     }
   }

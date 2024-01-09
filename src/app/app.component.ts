@@ -46,4 +46,5 @@ export class AppComponent {
   closeMenu(openBtn:HTMLButtonElement){
     openBtn.classList.remove('active');
   }
+  // ng build --output-path docs --base-href /Pizzanio/
 }

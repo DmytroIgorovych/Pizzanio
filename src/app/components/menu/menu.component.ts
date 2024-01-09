@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
+  i:number=1
 
+  menuPrew(){
+    this.i--
+    if (this.i===0){
+      this.i=3
+    }
+  }
+
+  menuNext(){
+    this.i++
+    if (this.i===4){
+      this.i=1
+    }
+  }
 }

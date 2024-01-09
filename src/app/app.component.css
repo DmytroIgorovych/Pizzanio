@@ -4,12 +4,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
-}
-
 .header {
   background-color: rgb(224, 73, 39);
   max-width: 1920px;
@@ -63,9 +57,11 @@ html {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   display: flex;
   align-items: center;
+  letter-spacing: 1px;
+  margin-right: 10px;
 }
 .header .container .logo a img {
   margin-right: 10px;
@@ -84,19 +80,20 @@ html {
   align-items: center;
 }
 .header .container .header_right .icons .language {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border: none;
   background: url("../assets/images/icons/earth.png") center center no-repeat content-box;
-  background-size: 35px;
-  margin-right: 50px;
+  background-size: 40px;
+  margin-right: 60px;
+  margin-left: 11px;
 }
 .header .container .header_right .icons .logIn {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border: none;
   background: url("../assets/images/icons/logIn.png") center center no-repeat content-box;
-  background-size: 35px;
+  background-size: 40px;
 }
 .header .container .header_right .burger_btns {
   display: none;
@@ -115,11 +112,9 @@ footer .container {
 footer .container nav {
   display: flex;
   flex-direction: column;
-  max-width: -moz-max-content;
-  max-width: max-content;
   align-items: last baseline;
   justify-content: center;
-  margin-right: 190px;
+  margin-right: 180px;
 }
 footer .container nav a {
   text-decoration: none;
@@ -133,14 +128,14 @@ footer .container nav a:hover {
 footer .container .logo {
   max-width: -moz-max-content;
   max-width: max-content;
-  margin-right: 425px;
+  margin-right: 450px;
 }
 footer .container .logo a {
   font-family: Antonio;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   display: flex;
   align-items: center;
 }
@@ -152,7 +147,7 @@ footer .container .contacts {
   flex-direction: column;
   max-width: -moz-max-content;
   max-width: max-content;
-  margin-right: 60px;
+  margin-right: 110px;
 }
 footer .container .contacts a {
   text-decoration: none;

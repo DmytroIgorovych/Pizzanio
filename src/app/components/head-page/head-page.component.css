@@ -4,16 +4,10 @@
   box-sizing: border-box;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
-}
-
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 50px 0 60px 0;
+  padding: 70px 0 88px 0;
   background-color: #191526;
   font-family: Antonio;
   font-size: 16px;
@@ -23,7 +17,7 @@ html {
 }
 .container .promotext {
   max-width: 35vw;
-  margin-left: 12vw;
+  margin-left: 11vw;
   padding-right: 50px;
 }
 .container .promotext h1 {
@@ -31,7 +25,7 @@ html {
   font-size: 200px;
   color: white;
   line-height: 200px;
-  padding-top: 20px;
+  padding-top: 43px;
 }
 .container .promotext .span {
   font-family: Charm;
@@ -40,7 +34,8 @@ html {
   display: block;
   width: -moz-max-content;
   width: max-content;
-  margin: -30px 0 20px 250px;
+  margin: -30px 0 20px 230px;
+  letter-spacing: 7px;
 }
 .container .promotext h4 {
   text-transform: uppercase;
@@ -52,13 +47,13 @@ html {
   font-size: 15px;
   color: rgba(220, 218, 218, 0.662);
   line-height: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .container .promotext ul li {
   list-style-type: circle;
   color: red;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   font-size: 22px;
 }
 .container .promotext ul li span {
@@ -68,12 +63,12 @@ html {
 .container .promotext button {
   font-size: 17px;
   text-transform: uppercase;
-  padding: 14px 26px;
+  padding: 14px 36px;
   border-radius: 12px;
   background-color: rgba(195, 39, 4, 0.15);
   color: rgba(220, 218, 218, 0.662);
   border: 2.5px solid rgb(195, 39, 4);
-  margin-top: 20px;
+  margin-top: 7px;
   margin-bottom: 30px;
 }
 .container .pizza-image {
@@ -82,6 +77,7 @@ html {
   height: 100%;
   position: relative;
   z-index: 1;
+  margin-left: 50px;
 }
 .container .pizza-image .imgContainer {
   border-radius: 50%;
@@ -89,8 +85,7 @@ html {
   margin: 15px 25px 45px 15px;
 }
 .container .pizza-image .imgContainer img {
-  width: 105%;
-  padding: 35px;
+  width: 110%;
   border: 2px solid rgb(195, 39, 4);
   border-radius: 50%;
   background-color: rgba(195, 39, 4, 0.2);

@@ -1,0 +1,87 @@
+.container{
+    max-width: 1920px;
+    padding:55px 0 55px 0;
+    background-color: #191526;
+    font-family: Antonio;
+    font-size: 15px;
+    color: white;
+    margin: 0 auto;
+    .menu{
+        .menu__title{
+            padding-left: 375px;
+            margin-bottom: 50px;
+        }
+        .menu__list{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3, 370px);
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+            .menu__item{
+                background-color: rgba(195, 39, 4, 0.15);
+                border-radius: 25px;
+                padding: 15px 35px 48px 35px;
+                border: 2px solid rgb(195, 39, 4);
+                .menu-item__image{
+                    width: 300px;
+                }
+                .menu-item__title{
+                    margin-top: 8px;
+                    font-size: 14px;
+                }
+                .menu-item__description{
+                    margin-top: 22px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 25px;
+                }
+                .menu-item__price{
+                    font-size: 22px;
+                }
+                .menu-item__btn{
+                    margin-top: 18px;
+                    font-size: 19px;
+                    background-color: rgba(195, 39, 4, 0.15);
+                    color: rgba(220, 218, 218, 0.662);
+                    border: 2.5px solid rgb(195, 39, 4);
+                    text-transform: uppercase;
+                    padding: 14px 29px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .menu__buttons{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            .prew__button{
+                background: url(../../../assets/images/icons/arrowLeft.png) center center no-repeat,
+                rgb(177, 56, 28);
+                background-size: 20px 20px;
+                margin-right: 20px;
+                border-radius: 20px 0 0 20px;
+                padding: 25px 44px;
+                border: none;
+            }
+            .next__button{
+                background: url(../../../assets/images/icons/arrowRight.png) center center no-repeat,
+                rgb(177, 56, 28);
+                background-size: 20px 20px;
+                border-radius: 0 20px 20px 0;
+                padding: 25px 44px;
+                border: none;
+            }
+            
+        }
+        .page__indicator{
+            display: flex;
+            justify-content: center;
+            font-family: Antonio;
+            font-size: 15px;
+            margin-top: 17px;
+            letter-spacing: 2px;
+        }
+    }
+    
+}
